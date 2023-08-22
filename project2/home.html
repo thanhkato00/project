@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/index1.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row justify-content-end">
+      <div class="col-2 p-4 sidebar fixed-top">
+        <h4><a href="" class="custom-link">Trang chủ</a></h4>
+        <ul class="sidebar-list">
+          <li><a href="./home.html" class="custom-link"><i class="bi bi-house-door me-3"></i> Home</a></li>
+
+          <li><a href="/User.html" class="active custom-link"><i class="bi bi-person-circle me-3"></i> User</a></li>
+        </ul>
+        <div class="cart-container">
+          <h3>Giỏ hàng</h3>
+          <ul class="cart-items">
+            <!-- Mỗi sản phẩm trong giỏ hàng -->
+            <li>
+              <span class="cart-item-name">Tên sản phẩm</span>
+              <span class="cart-item-price">Giá sản phẩm</span>
+              <div class="quantity-controls">
+                <button class="quantity-button minus" value="-"></button>
+                <span class="quantity">0</span>
+                <button class="quantity-button plus" value="+"></button>
+              </div>
+            </li>
+            <!-- ...Thêm các sản phẩm khác tương tự -->
+          </ul>
+          <p class="total-price">Tổng giá: 0đ</p>
+        </div>
+
+      </div>
+      <div id="content" class="col-10 px-0">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand fs-1" id="button-toggle"><i style="color: black !important; "
+                class="bi bi-list text-black"></i></a>
+            <!-- Example single danger button -->
+            <div class="btn-group me-5">
+
+              <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Kirikayza
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">MyProfile</a></li>
+                <li><a class="dropdown-item" href="#">Change Password</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </div>
+
+          </div>
+
+        </nav>
+        <div class="container">
+          <div class="row row-cols-md-4 row-cols-sm-2">
+            <div class="col col-image">
+              <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/g/t/gtt_7766_3__1.jpg"
+                alt="">
+              <div class="product-info">
+                <h6 class="product-title">Xiaomi Redmi Note 12 4GB 128GB
+                </h6>
+                <p class="product-price">4.390.000đ</p>
+                <button class="buy-button">Mua</button>
+              </div>
+
+            </div>
+            <div class="col col-image">
+              <img
+                src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/b/4/b48cd136-7366-4d01-8d58-8ee3d5dc93b7_1.jpg"
+                alt="">
+              <div class="product-info">
+                <h6 class="product-title">Samsung Galaxy Z Fold5 12GB 512GB</h6>
+                <p class="product-price">40.990.000đ</p>
+                <button class="buy-button">Mua</button>
+              </div>
+            </div>
+            <div class="col col-image">
+              <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/3/_/3_51_1_7.jpg" alt="">
+              <div class="product-info">
+                <h6 class="product-title">iPhone 13 Pro Max 128GB</h6>
+                <p class="product-price">24.590.000đ</p>
+                <button class="buy-button">Mua</button>
+              </div>
+            </div>
+            <div class="col col-image">
+              <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/1/_/1_365.jpg" alt="">
+              <div class="product-info">
+                <h6 class="product-title">ASUS ROG Phone 7 Ultimate 16GB 512GB</h6>
+                <p class="product-price">29.990.000₫</p>
+                <button class="buy-button">Mua</button>
+              </div>
+            </div>
+            <div class="col col-image">
+              <img
+                src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/r/e/reno10_5g_-_combo_product_-_blue.png"
+                alt="">
+              <div class="product-info">
+                <h6 class="product-title">OPPO Reno10 5G 8GB 256GB</h6>
+                <p class="product-price">10.990.000₫</p>
+                <button class="buy-button">Mua</button>
+              </div>
+            </div>
+            <div class="col col-image">
+              <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/r/e/realme-11-pro.png"
+                alt="">
+              <div class="product-info">
+                <h6 class="product-title">Realme 11 Pro 8GB 256GB</h6>
+                <p class="product-price">10.990.000₫</p>
+                <button class="buy-button">Mua</button>
+              </div>
+            </div>
+            <div class="col col-image">
+              <img
+                src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/o/n/oneplus10tblack_1.jpg"
+                alt="">
+              <div class="product-info">
+                <h6 class="product-title">Oneplus 10T 5G 8GB 128GB
+                </h6>
+                <p class="product-price">13.990.000₫</p>
+                <button class="buy-button">Mua</button>
+              </div>
+            </div>
+            <div class="col col-image">
+              <img
+                src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/g/a/galaxys23ultra_front_green_221122_2.jpg"
+                alt="">
+              <div class="product-info">
+                <h6 class="product-title">Samsung Galaxy S23 Ultra 256GB</h6>
+                <p class="product-price">23.790.000₫</p>
+                <button class="buy-button">Mua</button>
+              </div>
+            </div>
+            <!-- Add more columns as needed -->
+          </div>
+        </div>
+
+        <!-- <div class="container">
+          <div class="row row-cols-4">
+            <div class="col col-image"><img
+                src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/i/p/iphone-11-pro-max-space-select-2019_1_1_3_2.png"
+                alt="" srcset=""></div>
+            <div class="col"><img
+                src="https://cdn2.cellphones.com.vn/x358,webp,q100/media/catalog/product/3/_/3_51_1_2_2_1_1_2.jpg"
+                alt="" srcset=""></div>
+            <div class="col"><img
+                src="https://cdn2.cellphones.com.vn/x358,webp,q100/media/catalog/product/i/p/iphone-12-mini-do-200x200_29.jpg"
+                alt="" srcset=""></div>
+            <div class="col"><img
+                src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/i/p/iphone8-plus-silver-select-2018_6_3.png"
+                alt="" srcset=""></div>
+            <div class="col"><img
+                src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/i/p/iphone8-plus-silver-select-2018_6_3.png"
+                alt="" srcset=""></div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+  </div>
+
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="./js/home.js"></script>
+</body>
+
+</html>

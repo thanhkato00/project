@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/idex.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="main">
+    <form action="" method="POST" class="form" id="form-2">
+      <h3 class="heading">Đăng Nhập</h3>
+
+
+      <div class="spacer"></div>
+      <div class="form-group">
+        <label for="email" class="form-label">Email</label>
+        <input id="email" name="email" type="text" placeholder="VD: email@domain.com" class="form-control">
+        <span class="form-message"></span>
+      </div>
+      <div class="form-group">
+        <label for="password" class="form-label">Mật khẩu</label>
+        <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
+        <span class="form-message"></span>
+      </div>
+      <button class="form-submit">Đăng Nhập</button>
+      <div id="them"><span>Chưa có tài khoản? </divspan><Span><a href="dangky.html">Đăng ký tại đây!</a></Span></div>
+    </form>
+  </div>
+  <script src="./js/Validator.js"></script>
+  <script>
+    var validator = new Validator({
+      form: '#form-2', // ID của form đăng nhập
+      rules: [
+
+        Validator.isRequired('#email'),
+        Validator.isEmail('#email'),
+        Validator.minLength('#password', 6),
+      ],
+      errorSelector: '.form-message',
+      onSubmit: function(formValues) {
+        // Kiểm tra đăng nhập và chuyển trang
+        var existingData = localStorage.getItem("users");
+        var parsedData = existingData ? JSON.parse(existingData) : [];
+        var isValidLogin = parsedData.some(
+          (user) => user.email === formValues.email && user.password === formValues.password
+        );
+
+        if (isValidLogin) {
+          window.location.href = 'home.html'; // Chuyển trang đến home.html
+        } else {
+          alert('Thông tin đăng nhập không chính xác');
+        }
+      },
+    });
+  </script>
+
+</body>
+
+</html>
